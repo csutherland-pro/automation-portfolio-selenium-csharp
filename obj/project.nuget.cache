@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PNUl34PM0WM=",
+  "dgSpecHash": "5fbLS7uqQnw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Chris\\Documents\\automation-portfolio\\automation-portfolio-selenium-csharp\\SeleniumCSharp.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,13 @@
     "C:\\Users\\Chris\\.nuget\\packages\\nunit.analyzers\\4.7.0\\nunit.analyzers.4.7.0.nupkg.sha512",
     "C:\\Users\\Chris\\.nuget\\packages\\nunit3testadapter\\5.0.0\\nunit3testadapter.5.0.0.nupkg.sha512",
     "C:\\Users\\Chris\\.nuget\\packages\\selenium.webdriver\\4.35.0\\selenium.webdriver.4.35.0.nupkg.sha512",
-    "C:\\Users\\Chris\\.nuget\\packages\\selenium.webdriver.chromedriver\\140.0.7339.8200\\selenium.webdriver.chromedriver.140.0.7339.8200.nupkg.sha512"
+    "C:\\Users\\Chris\\.nuget\\packages\\selenium.webdriver.chromedriver\\140.0.7339.8200\\selenium.webdriver.chromedriver.140.0.7339.8200.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\system.reflection.metadata\\8.0.0\\system.reflection.metadata.8.0.0.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.20\\microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.20\\microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.20\\microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
   ],
   "logs": []
 }

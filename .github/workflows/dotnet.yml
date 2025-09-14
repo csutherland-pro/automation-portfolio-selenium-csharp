@@ -4,12 +4,24 @@ on: [push, pull_request]
 
 jobs:
   build:
+    # Use a container that mimics the GitHub Actions environment for local `act` runs
+    container: catthehacker/ubuntu:act-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install Google Chrome
+        run: |
+          # Add Google's official GPG key
+          sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          # Add the Chrome repository to the system's sources list
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '10.0.x'
-      - run: dotnet restore
-      - run: dotnet test --verbosity normal
+          dotnet-version: '8.0.x'
+      - name: Restore dependencies
+        run: dotnet restore SeleniumCSharp.csproj
+      - name: Run tests
+        run: dotnet test SeleniumCSharp.csproj --verbosity normal
